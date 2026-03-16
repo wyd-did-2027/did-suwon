@@ -27,10 +27,10 @@ export const content = {
     footer: {
       logoAlt: "wyd did 수원 로고",
       address:
-        "경기도 수원시 장안구 이목로 39 WYD 수원 교구대회 사무국",
-      email: "qna.wyd.doc.icn@gmail.com",
-      phone: "032-765-6997",
-      hours: "운영시간: 10:00 ~ 18:00",
+        "경기 의왕시 원골로 48 카톨릭교육문화회관",
+      email: "wyd@casuwon.or.kr",
+      phone: "031-458-4442",
+      hours: "운영시간: 월~금 08:30~17:30 (점심시간 12:30~13:30)",
       copyright: "Copyright ⓒ 수원교구 All rights reserved",
     },
     slider: {
@@ -85,10 +85,10 @@ export const content = {
     footer: {
       logoAlt: "wyd did Suwon logo",
       address:
-        "39, Imok-ro, Jangan-gu, Suwon-si, Gyeonggi-do, WYD Suwon Diocesan Committee",
-      email: "qna.wyd.doc.icn@gmail.com",
-      phone: "032-765-6997",
-      hours: "Hours: 10:00 ~ 18:00",
+        "48, Wongol-ro, Uiwang-si, Gyeonggi-do, Catholic Education & Culture Center",
+      email: "wyd@casuwon.or.kr",
+      phone: "031-458-4442",
+      hours: "Hours: Mon-Fri 08:30~17:30 (Lunch 12:30~13:30)",
       copyright: "Copyright ⓒ Diocese of Suwon All rights reserved",
     },
     slider: {
