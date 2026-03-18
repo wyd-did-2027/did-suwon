@@ -23,15 +23,15 @@ interface SiteCardProps {
 
 function SiteCard({ title, href, imageSrc }: SiteCardProps) {
   return (
-    <div className="relative bg-black hover:[&_span]:bg-black">
-      <Link className="block" href={href} target="_blank">
+    <div className="relative bg-black hover:[&_span]:bg-black size-full">
+      <Link className="block size-full" href={href} target="_blank">
         {imageSrc && (
           <Image
             width={390}
             height={293}
             alt="이미지"
             src={imageSrc}
-            className="w-full"
+            className="w-full h-full object-center object-cover aspect-square"
           />
         )}
         <div className="flex justify-between absolute pb-3.5 px-4 w-full items-center bottom-0">
@@ -50,7 +50,10 @@ interface SiteSectionProps {
   locale?: Locale;
 }
 
-export default function SiteSection({ items, locale = "kr" }: SiteSectionProps) {
+export default function SiteSection({
+  items,
+  locale = "kr",
+}: SiteSectionProps) {
   const swiperRef = useRef<SwiperType | null>(null);
   const [progress, setProgress] = useState(0);
   const t = content[locale];
@@ -59,10 +62,15 @@ export default function SiteSection({ items, locale = "kr" }: SiteSectionProps) 
     <Section
       id="site"
       className="bg-no-repeat bg-center bg-cover relative bg-fixed min-h-auto"
-      style={{ backgroundImage: "url('https://r2-image-server.masterforce999.workers.dev/section-main03.jpeg')" }}
+      style={{
+        backgroundImage:
+          "url('https://r2-image-server.masterforce999.workers.dev/section-main03.jpeg')",
+      }}
     >
       <div className="flex justify-between items-center mb-8 relative z-20">
-        <SectionTitle className="text-white mb-0">{t.sections.site}</SectionTitle>
+        <SectionTitle className="text-white mb-0">
+          {t.sections.site}
+        </SectionTitle>
 
         {items.length > 1 && (
           <div className="items-center gap-4 max-[1080px]:flex hidden">
@@ -97,13 +105,19 @@ export default function SiteSection({ items, locale = "kr" }: SiteSectionProps) 
       <ul
         className="w-full gap-10 relative z-20 h-auto hidden min-[1081px]:grid"
         style={{
-          gridTemplateColumns: items.length === 1
-            ? "370px"
-            : "repeat(auto-fit, minmax(min(300px,100%), 1fr))",
+          gridTemplateColumns:
+            items.length === 1
+              ? "370px"
+              : "repeat(auto-fit, minmax(min(300px,100%), 1fr))",
         }}
       >
         {items.map((site) => (
-          <li key={site.id} style={items.length === 1 ? { maxWidth: 370, maxHeight: 283 } : undefined}>
+          <li
+            key={site.id}
+            style={
+              items.length === 1 ? { maxWidth: 370, maxHeight: 283 } : undefined
+            }
+          >
             <SiteCard
               title={site.title}
               href={site.href}
@@ -128,7 +142,13 @@ export default function SiteSection({ items, locale = "kr" }: SiteSectionProps) 
         >
           {items.map((site) => (
             <SwiperSlide key={site.id}>
-              <div style={items.length === 1 ? { maxWidth: 370, maxHeight: 283 } : undefined}>
+              <div
+                style={
+                  items.length === 1
+                    ? { maxWidth: 370, maxHeight: 283 }
+                    : undefined
+                }
+              >
                 <SiteCard
                   title={site.title}
                   href={site.href}
