@@ -106,18 +106,11 @@ export default function SiteSection({
         className="w-full gap-10 relative z-20 h-auto hidden min-[1081px]:grid"
         style={{
           gridTemplateColumns:
-            items.length === 1
-              ? "370px"
-              : "repeat(auto-fit, minmax(min(300px,100%), 1fr))",
+            "repeat(auto-fit, minmax(min(283px, 100%), 370px))",
         }}
       >
         {items.map((site) => (
-          <li
-            key={site.id}
-            style={
-              items.length === 1 ? { maxWidth: 370, maxHeight: 283 } : undefined
-            }
-          >
+          <li key={site.id}>
             <SiteCard
               title={site.title}
               href={site.href}
