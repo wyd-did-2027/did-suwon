@@ -136,11 +136,6 @@ export default function SiteSection({
           {items.map((site) => (
             <SwiperSlide key={site.id}>
               <div
-                style={
-                  items.length === 1
-                    ? { maxWidth: 370, maxHeight: 283 }
-                    : undefined
-                }
               >
                 <SiteCard
                   title={site.title}
