@@ -106,7 +106,7 @@ export default function SiteSection({
         className="w-full gap-10 relative z-20 h-auto hidden min-[1081px]:grid"
         style={{
           gridTemplateColumns:
-            "repeat(auto-fit, minmax(min(283px, 100%), 370px))",
+            "repeat(auto-fill, minmax(min(289px, 100%), 1fr))",
         }}
       >
         {items.map((site) => (
