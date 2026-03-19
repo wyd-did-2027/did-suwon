@@ -59,7 +59,7 @@ export default function SiteSection({
   const t = content[locale];
 
   return (
-    <Section id="site" className="bg-gray-200 relative bg-fixed min-h-auto">
+    <Section id="site" className="bg-gray-200 relative min-h-auto">
       <div className="flex justify-between items-center mb-8 relative z-20">
         <SectionTitle className="text-black mb-0">
           {t.sections.site}
