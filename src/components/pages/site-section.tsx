@@ -59,16 +59,9 @@ export default function SiteSection({
   const t = content[locale];
 
   return (
-    <Section
-      id="site"
-      className="bg-no-repeat bg-center bg-cover relative bg-fixed min-h-auto"
-      style={{
-        backgroundImage:
-          "url('https://r2-image-server.masterforce999.workers.dev/section-main03.jpeg')",
-      }}
-    >
+    <Section id="site" className="bg-gray-200 relative bg-fixed min-h-auto">
       <div className="flex justify-between items-center mb-8 relative z-20">
-        <SectionTitle className="text-white mb-0">
+        <SectionTitle className="text-black mb-0">
           {t.sections.site}
         </SectionTitle>
 
@@ -135,8 +128,7 @@ export default function SiteSection({
         >
           {items.map((site) => (
             <SwiperSlide key={site.id}>
-              <div
-              >
+              <div>
                 <SiteCard
                   title={site.title}
                   href={site.href}

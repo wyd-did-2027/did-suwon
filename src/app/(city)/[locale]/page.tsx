@@ -6,7 +6,7 @@ import NoticeSection from "@/components/pages/notice-section";
 import YoutubeSection from "@/components/pages/youtube-section";
 import SiteSection from "@/components/pages/site-section";
 import FaqSection from "@/components/pages/faq-section";
-import { locales, isLocale, type Locale } from "@/lib/content";
+import { locales, isLocale } from "@/lib/content";
 import {
   getCalendarData,
   getNoticeData,
