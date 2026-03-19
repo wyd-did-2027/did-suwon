@@ -8,7 +8,7 @@ import { Navigation } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import { Plus, ChevronLeft, ChevronRight } from "lucide-react";
 
-import { Section, SectionTitle, BackDrop } from "../ui/common-layout";
+import { Section, SectionTitle } from "../ui/common-layout";
 import type { SiteItem } from "@/lib/notion";
 import { content, type Locale } from "@/lib/content";
 
@@ -67,9 +67,9 @@ export default function SiteSection({
 
         {items.length > 1 && (
           <div className="items-center gap-4 max-[1080px]:flex hidden">
-            <div className="w-40 h-0.5 bg-white/30 hidden sm:block relative">
+            <div className="w-60 h-0.5 bg-gray-300 hidden sm:block relative">
               <div
-                className="absolute left-0 top-0 h-full bg-white transition-all duration-300"
+                className="absolute left-0 top-0 h-full bg-black transition-all duration-300"
                 style={{ width: `${progress * 100}%` }}
               />
             </div>
@@ -139,8 +139,6 @@ export default function SiteSection({
           ))}
         </Swiper>
       </div>
-
-      <BackDrop className="backdrop-brightness-100 blur-xs" />
     </Section>
   );
 }
