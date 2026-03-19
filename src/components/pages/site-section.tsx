@@ -23,7 +23,7 @@ interface SiteCardProps {
 
 function SiteCard({ title, href, imageSrc }: SiteCardProps) {
   return (
-    <div className="relative hover:[&_span]:bg-black size-full">
+    <div className="relative size-full">
       <Link className="block size-full" href={href} target="_blank">
         {imageSrc && (
           <Image
@@ -36,7 +36,7 @@ function SiteCard({ title, href, imageSrc }: SiteCardProps) {
         )}
         <div className="flex justify-between absolute pb-3.5 px-4 w-full items-center bottom-0">
           <h3 className="heading03B text-white">{title}</h3>
-          <span className="size-12 rounded-full flex items-center justify-center backdrop-blur-[5px] shadow-[inset_-1px_-1px_0px_rgba(255,255,255,0.5)] transition-colors">
+          <span className="size-12 rounded-full flex items-center justify-center bg-black">
             <Plus className="size-8 text-white" />
           </span>
         </div>

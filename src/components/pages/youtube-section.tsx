@@ -27,7 +27,7 @@ export default function YoutubeSection({ items, locale = "kr" }: YoutubeSectionP
   return (
     <Section
       id="youtube"
-      className="bg-no-repeat bg-fixed bg-cover min-h-auto"
+      className="bg-gray-100 min-h-auto"
     >
       <div className="flex justify-between items-center mb-8">
         <SectionTitle className="mb-0">{t.sections.youtube}</SectionTitle>
