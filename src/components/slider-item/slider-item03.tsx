@@ -7,23 +7,23 @@ const PREFIX: Record<string, { pc: string; mobile: string }> = {
   en: { pc: "pe", mobile: "me" },
 };
 
-export default function SliderItem01({ locale }: { locale: string }) {
+export default function SliderItem03({ locale }: { locale: string }) {
   const { pc, mobile } = PREFIX[locale] || PREFIX.ko;
 
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-full bg-white">
       <Image
-        src={`${R2_URL}/suwon/${mobile}_2.png`}
-        alt="수원2"
+        src={`${R2_URL}/suwon/${mobile}_4.png`}
+        alt="수원3"
         fill
-        className="object-cover min-[1080px]:hidden block"
+        className="object-contain min-[1080px]:hidden block aspect-square"
         priority
       />
       <Image
-        src={`${R2_URL}/suwon/${pc}_2.png`}
-        alt="수원2"
+        src={`${R2_URL}/suwon/${pc}_4.png`}
+        alt="수원3"
         fill
-        className="object-cover hidden min-[1080px]:block"
+        className="object-cover hidden min-[1080px]:block aspect-video"
         priority
       />
     </div>

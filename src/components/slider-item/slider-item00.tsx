@@ -2,21 +2,21 @@ import Image from "next/image";
 
 const R2_URL = process.env.NEXT_PUBLIC_R2_PUBLIC_URL;
 
-export default function SliderItem00() {
+const PREFIX: Record<string, string> = {
+  kr: "pk",
+  en: "pe",
+};
+
+export default function SliderItem00({ locale }: { locale: string }) {
+  const prefix = PREFIX[locale] || PREFIX.ko;
+
   return (
-    <div className="relative w-full h-full bg-[#F5EBDB]">
+    <div className="relative w-full h-full">
       <Image
-        src={`${R2_URL}/main00m.png`}
-        alt="인천교구 wyd open"
+        src={`${R2_URL}/suwon/${prefix}_1.png`}
+        alt="수원1"
         fill
-        className="object-contain md:hidden"
-        priority
-      />
-      <Image
-        src={`${R2_URL}/main00.png`}
-        alt="인천교구 wyd open"
-        fill
-        className="object-contain hidden md:block"
+        className="object-cover"
         priority
       />
     </div>
