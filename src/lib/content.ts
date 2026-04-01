@@ -33,7 +33,7 @@ export const content = {
     footer: {
       logoAlt: "wyd did 수원 로고",
       address:
-        "경기 의왕시 원골로 48 카톨릭교육문화회관",
+        "경기 의왕시 원골로 48 가톨릭교육문화회관",
       email: "wyd@casuwon.or.kr",
       phone: "031-458-4442",
       hours: "운영시간: 월~금 08:30~17:30 (점심시간 12:30~13:30)",
