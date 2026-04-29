@@ -20,7 +20,7 @@ export const content = {
       ogLocale: "ko_KR",
     },
     header: {
-      logoAlt: "wyd did 수원 로고",
+      logoAlt: "wyd did 수원",
       nav: {
         home: "홈",
         calendar: "캘린더",
@@ -31,7 +31,7 @@ export const content = {
       },
     },
     footer: {
-      logoAlt: "wyd did 수원 로고",
+      logoAlt: "wyd did 수원",
       address:
         "경기 의왕시 원골로 48 가톨릭교육문화회관",
       email: "wyd@casuwon.or.kr",
@@ -78,7 +78,7 @@ export const content = {
       ogLocale: "en_US",
     },
     header: {
-      logoAlt: "wyd did Suwon logo",
+      logoAlt: "wyd did Suwon",
       nav: {
         home: "Home",
         calendar: "Calendar",
@@ -89,7 +89,7 @@ export const content = {
       },
     },
     footer: {
-      logoAlt: "wyd did Suwon logo",
+      logoAlt: "wyd did Suwon",
       address:
         "48, Wongol-ro, Uiwang-si, Gyeonggi-do, Catholic Education & Culture Center",
       email: "wyd@casuwon.or.kr",
