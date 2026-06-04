@@ -60,9 +60,6 @@ export async function generateMetadata({
       description: t.description,
       images: [siteConfig.ogImage],
     },
-    other: {
-      "google-site-verification": process.env.GOOGLE_SITE_VERIFICATION || "",
-    },
   };
 }
 
