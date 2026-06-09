@@ -36,7 +36,8 @@ export const content = {
       logoAlt: "wyd did 수원",
       address:
         "경기 의왕시 원골로 48 가톨릭교육문화회관",
-      email: "wyd@casuwon.or.kr",
+      emailLabel: "해외순례자 응대 전용 이메일 주소",
+      email: "wyd-sw2@casuwon.or.kr",
       phone: "031-458-4442",
       hours: "운영시간: 월~금 08:30~17:30 (점심시간 12:30~13:30)",
       copyright: "Copyright ⓒ 수원교구 All rights reserved",
@@ -96,7 +97,8 @@ export const content = {
       logoAlt: "wyd did Suwon",
       address:
         "48, Wongol-ro, Uiwang-si, Gyeonggi-do, Catholic Education & Culture Center",
-      email: "wyd@casuwon.or.kr",
+      emailLabel: "Dedicated email for overseas pilgrims",
+      email: "wyd-sw2@casuwon.or.kr",
       phone: "031-458-4442",
       hours: "Hours: Mon-Fri 08:30~17:30 (Lunch 12:30~13:30)",
       copyright: "Copyright ⓒ Diocese of Suwon All rights reserved",

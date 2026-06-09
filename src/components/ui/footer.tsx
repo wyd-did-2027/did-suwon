@@ -24,7 +24,12 @@ export default function Footer({ locale = "kr" }: { locale?: Locale }) {
           <h4 className="heading04B mb-1">Contact</h4>
           <ul className="flex flex-col gap-y-2 body02R">
             <li>{t.address}</li>
-            <li>{t.email}</li>
+            <li>
+              {t.emailLabel}:{" "}
+              <a href={`mailto:${t.email}`} className="hover:underline">
+                {t.email}
+              </a>
+            </li>
           </ul>
         </address>
       </div>
